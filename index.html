@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f78bb5">
+  <title>Athena Shaine E. Alis — 7th Birthday</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: #ffdce9;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow-x: hidden;
+    }
+
+    .invitation {
+      position: relative;
+      width: min(100vw, 768px);
+      margin: 0 auto;
+      line-height: 0;
+    }
+
+    .invitation img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Transparent clickable area positioned over the VIEW LOCATION button */
+    .map-link {
+      position: absolute;
+      left: 18%;
+      right: 18%;
+      bottom: 3.2%;
+      height: 7.5%;
+      display: block;
+      border-radius: 60px;
+      text-indent: -9999px;
+      overflow: hidden;
+      background: rgba(255,255,255,0);
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .map-link:focus-visible {
+      outline: 3px solid #d93672;
+      outline-offset: 3px;
+    }
+
+    @media (min-width: 769px) {
+      .invitation {
+        box-shadow: 0 12px 40px rgba(130, 70, 100, .22);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="invitation">
+    <img
+      src="athena_birthday_invitation.png"
+      alt="Athena Shaine E. Alis 7th birthday invitation"
+    >
+
+    <a
+      class="map-link"
+      href="https://www.google.com/maps/place/Queen+Aurora+Garden+Resort/@14.2733414,121.1504529,17z/data=!3m1!4b1!4m9!3m8!1s0x3397d8bf3595fc9b:0x857203838562402b!5m2!4m1!1i2!8m2!3d14.2733362!4d121.1530278!16s%2Fg%2F11bx5pgy71?entry=ttu"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View Queen Aurora Garden Resort location"
+    >View Location</a>
+  </main>
+</body>
+</html>
